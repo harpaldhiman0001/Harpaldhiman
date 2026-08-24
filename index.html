@@ -1023,6 +1023,51 @@ let allSongs = [];
 let activeLang = "all";
 let activeMood = "all";
 
+  /* ── Video Modal wiring (was missing entirely) ── */
+const modal        = document.getElementById("video-modal");
+const modalIframe   = document.getElementById("video-modal-iframe");
+const modalTitle    = document.getElementById("video-modal-title");
+const modalClose    = document.getElementById("video-modal-close");
+
+function openVideoModal(vid, title){
+  if(!vid) return;
+  modalTitle.textContent = title || "Now Playing";
+  // unmuted this time — this is the actual "listen with sound" path
+  modalIframe.src = `https://www.youtube.com/embed/${vid}?autoplay=1&rel=0`;
+  modal.classList.add("open");
+}
+
+function closeVideoModal(){
+  modal.classList.remove("open");
+  modalIframe.src = ""; // critical: stops playback, otherwise it keeps playing hidden
+}
+
+modalClose.addEventListener("click", closeVideoModal);
+
+// click outside the panel closes it
+modal.addEventListener("click", (e) => {
+  if(e.target === modal) closeVideoModal();
+});
+
+// Escape key closes it
+document.addEventListener("keydown", (e) => {
+  if(e.key === "Escape" && modal.classList.contains("open")) closeVideoModal();
+});
+
+/* ── Card click → open modal with sound ── */
+// Call this once, after renderSongs() builds the cards.
+function attachCardClick(){
+  document.querySelectorAll(".song-card").forEach(card => {
+    card.addEventListener("click", (e) => {
+      // don't hijack clicks on the actual YouTube link inside the card
+      if(e.target.closest(".card-yt")) return;
+      const vid   = card.dataset.videoId;
+      const title = card.dataset.title || "";
+      openVideoModal(vid, title);
+    });
+  });
+}
+
 async function initSongs(){
   const grid = document.getElementById("songs-grid");
   const count = document.getElementById("songs-count");
@@ -1099,8 +1144,8 @@ grid.innerHTML = filtered.map((s, i) => {
   const vid = extractYouTubeId(s.link) || "";
 
   return `
-    <div class="song-card ${cardCls}" data-video-id="${vid}">
-      <div class="card-preview"></div>
+<div class="song-card ${cardCls}" data-video-id="${vid}" data-title="${esc(s.name)}">
+<div class="card-preview"></div>
       <div class="card-badges">
         ${langCls ? `<span class="badge ${langCls}">${langLbl}</span>` : ""}
         ${moodCls ? `<span class="badge ${moodCls}">${moodEmoji} ${moodLbl}</span>` : ""}
@@ -1122,7 +1167,8 @@ grid.innerHTML = filtered.map((s, i) => {
     </div>`;
 }).join("");
 
-attachHoverPreview();
+  attachHoverPreview();
+attachCardClick();
 }
 
 // ─── CSV parser ──────────────────────────────────────
