@@ -554,6 +554,18 @@ details:not([open]) .read-less-txt{display:none}
 </head>
 <body>
 
+  <div class="video-modal" id="video-modal">
+  <div class="video-modal-inner">
+    <div class="video-modal-head">
+      <span class="video-modal-title" id="video-modal-title">Now Playing</span>
+      <button class="video-modal-close" id="video-modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="video-modal-frame">
+      <iframe id="video-modal-iframe" src="" title="YouTube player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
 <!-- ══════════════════════════════════════
      NAV
 ══════════════════════════════════════ -->
@@ -1192,16 +1204,5 @@ setInterval(()=>{
 // ─── boot ────────────────────────────────────────────
 initSongs();
 </script>
-  <div class="video-modal" id="video-modal">
-  <div class="video-modal-inner">
-    <div class="video-modal-head">
-      <span class="video-modal-title" id="video-modal-title">Now Playing</span>
-      <button class="video-modal-close" id="video-modal-close" aria-label="Close">&times;</button>
-    </div>
-    <div class="video-modal-frame">
-      <iframe id="video-modal-iframe" src="" title="YouTube player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
 </body>
 </html>
