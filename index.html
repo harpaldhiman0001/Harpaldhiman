@@ -963,7 +963,7 @@ details:not([open]) .read-less-txt{display:none}
 //    E = Singer name (optional)
 // ═══════════════════════════════════════════════════
 
-const SHEET_ID = "YOUR_SHEET_ID_HERE";
+const SHEET_ID = "1pFzCz96G52dxGNNyB18gXqA5hBv8Uywuqb67t1ij69U";
 
 // ─── fetch + parse ───────────────────────────────────
 const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv`;
@@ -976,7 +976,7 @@ async function initSongs(){
   const grid = document.getElementById("songs-grid");
   const count = document.getElementById("songs-count");
 
-  if(!SHEET_ID || SHEET_ID === "YOUR_SHEET_ID_HERE"){
+  if(!SHEET_ID || SHEET_ID === "1pFzCz96G52dxGNNyB18gXqA5hBv8Uywuqb67t1ij69U"){
     grid.innerHTML = `
       <div class="songs-empty" style="grid-column:1/-1">
         <p style="font-size:1rem;margin-bottom:.5rem;color:#EDE8DF">⚙️ One-time setup needed</p>
