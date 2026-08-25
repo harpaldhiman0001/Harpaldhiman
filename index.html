@@ -10,685 +10,352 @@
 <meta name="google-site-verification" content="google29d0a940455407fa.html"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://harpaldhiman0001.github.io/Harpaldhiman/"/>
-
-<!-- Open Graph / Social -->
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Harpal Dhiman — Punjabi & Hindi Lyricist"/>
-<meta property="og:description" content="Original Punjabi and Hindi lyrics — sad, romantic and beats. Professional lyricist for singers and music artists. Contact for collaboration."/>
+<meta property="og:description" content="Original Punjabi and Hindi lyrics — sad, romantic and beats. Professional lyricist for singers and music artists."/>
 <meta property="og:url" content="https://harpaldhiman0001.github.io/Harpaldhiman/"/>
-<meta property="og:site_name" content="Harpal Dhiman Lyrics"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Harpal Dhiman — Punjabi & Hindi Lyricist"/>
-<meta name="twitter:description" content="Original Punjabi and Hindi lyrics for singers. Sad, romantic and beats songs. Collaborate now."/>
-
-<!-- Structured Data -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://harpaldhiman0001.github.io/Harpaldhiman/#person",
-      "name": "Harpal Dhiman",
-      "jobTitle": "Lyricist",
-      "description": "Professional Punjabi and Hindi lyricist specializing in sad, romantic and beats song lyrics for singers and music artists.",
-      "email": "harpallyricsbeats@gmail.com",
-      "sameAs": ["https://www.youtube.com/@Harpaldhimanofficial"],
-      "knowsAbout": ["Punjabi lyrics", "Hindi lyrics", "Sad songs", "Romantic songs", "Beats music", "Song writing"],
-      "knowsLanguage": ["Punjabi", "Hindi"]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://harpaldhiman0001.github.io/Harpaldhiman/#website",
-      "url": "https://harpaldhiman0001.github.io/Harpaldhiman/",
-      "name": "Harpal Dhiman — Lyricist",
-      "description": "Official portfolio of Harpal Dhiman, Punjabi and Hindi lyricist",
-      "author": {"@id": "https://harpaldhiman0001.github.io/Harpaldhiman/#person"}
-    },
-    {
-      "@type": "Blog",
-      "@id": "https://harpaldhiman0001.github.io/Harpaldhiman/#blog",
-      "name": "Harpal Dhiman — Lyrics & Music Blog",
-      "description": "Blog about Punjabi and Hindi song writing, lyrics tips, and music for singers",
-      "author": {"@id": "https://harpaldhiman0001.github.io/Harpaldhiman/#person"}
-    }
-  ]
-}
+{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://harpaldhiman0001.github.io/Harpaldhiman/#person","name":"Harpal Dhiman","jobTitle":"Lyricist","email":"harpallyricsbeats@gmail.com","sameAs":["https://www.youtube.com/@Harpaldhimanofficial"],"knowsLanguage":["Punjabi","Hindi"]},{"@type":"WebSite","url":"https://harpaldhiman0001.github.io/Harpaldhiman/","name":"Harpal Dhiman — Lyricist"}]}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
-/*─────────────────────────────────────────
-  TOKENS
-─────────────────────────────────────────*/
 :root{
-  --bg:#07070E;
-  --s1:#0F0F1A;
-  --s2:#161626;
-  --ink:#EDE8DF;
-  --ink2:#8C8A96;
-  --ink3:#3E3D4D;
-
-  --saffron:#FF8C00;
-  --rose:#E8385A;
-  --sad:#4A90D9;
-  --romantic:#F0548C;
-  --beats:#8B5CF6;
-
-  --border:rgba(255,255,255,0.07);
-  --r:4px;
+  --bg:#07070E;--s1:#0F0F1A;--s2:#161626;
+  --ink:#EDE8DF;--ink2:#8C8A96;--ink3:#3E3D4D;
+  --saffron:#FF8C00;--rose:#E8385A;
+  --sad:#4A90D9;--romantic:#F0548C;--beats:#8B5CF6;
+  --border:rgba(255,255,255,0.07);--r:6px;
 }
-
-  /* ─── Video Modal ─── */
-.video-modal{
-  position:fixed;inset:0;z-index:500;
-  background:rgba(5,5,10,.92);
-  display:none;align-items:center;justify-content:center;
-  padding:2rem;
-}
-.video-modal.open{display:flex}
-.video-modal-inner{
-  width:100%;max-width:900px;
-  background:var(--s1);border:1px solid var(--border);border-radius:8px;
-  overflow:hidden;
-}
-
-  .card-preview{
-  height:0;overflow:hidden;border-radius:var(--r);
-  transition:height .3s ease;background:#000;
-}
-.song-card.hover-active .card-preview{
-  height:160px;margin-bottom:.5rem;
-}
-.card-preview iframe{
-  width:100%;height:160px;border:none;display:block;
-}
-.video-modal-head{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:1rem 1.3rem;border-bottom:1px solid var(--border);
-}
-.video-modal-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600}
-.video-modal-close{
-  background:transparent;border:none;color:var(--ink2);cursor:pointer;
-  font-size:1.4rem;line-height:1;padding:.2rem .5rem;transition:color .2s;
-}
-.video-modal-close:hover{color:var(--saffron)}
-.video-modal-frame{position:relative;padding-top:56.25%;background:#000}
-.video-modal-frame iframe{
-  position:absolute;top:0;left:0;width:100%;height:100%;border:none;
-}
-
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;font-weight:300;overflow-x:hidden;line-height:1.6}
 a{color:inherit;text-decoration:none}
-img{display:block;max-width:100%}
 
-/*─────────────────────────────────────────
-  NAV
-─────────────────────────────────────────*/
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:200;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:1.1rem 3rem;
-  background:rgba(7,7,14,0.9);
-  backdrop-filter:blur(16px);
-  border-bottom:1px solid var(--border);
-}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1rem 3rem;background:rgba(7,7,14,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
 .logo{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700;letter-spacing:.05em}
 .logo em{font-style:normal;color:var(--saffron)}
-.nav-links{display:flex;gap:2.2rem;list-style:none}
+.nav-links{display:flex;gap:2rem;list-style:none}
 .nav-links a{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2);transition:color .2s;font-weight:500}
 .nav-links a:hover{color:var(--saffron)}
-.nav-cta{
-  background:var(--saffron);color:#07070E;
-  font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
-  padding:.55rem 1.3rem;border-radius:var(--r);transition:all .2s;white-space:nowrap;
-}
-.nav-cta:hover{background:#ffA020;transform:translateY(-1px)}
+.nav-yt{display:flex;align-items:center;gap:.5rem;background:#FF0000;color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.55rem 1.2rem;border-radius:var(--r);transition:all .2s}
+.nav-yt:hover{background:#cc0000;transform:translateY(-1px)}
 
-/*─────────────────────────────────────────
-  HERO
-─────────────────────────────────────────*/
-.hero{
-  min-height:100dvh;
-  display:flex;flex-direction:column;justify-content:center;
-  padding:9rem 3rem 5rem;
-  position:relative;overflow:hidden;
-}
-/* big watermark */
-.hero-wm{
-  position:absolute;right:-2%;bottom:-5%;
-  font-family:'Cormorant Garamond',serif;font-weight:700;
-  font-size:clamp(10rem,28vw,30rem);line-height:1;
-  color:transparent;
-  -webkit-text-stroke:1px rgba(255,140,0,.05);
-  pointer-events:none;user-select:none;letter-spacing:-.03em;
-}
-/* glow */
-.hero::after{
-  content:'';position:absolute;
-  top:-10%;left:-15%;width:60vw;height:60vw;
-  background:radial-gradient(circle,rgba(255,140,0,.055) 0%,transparent 65%);
-  pointer-events:none;
-}
-
-.hero-badge{
-  display:inline-flex;align-items:center;gap:.5rem;
-  font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--saffron);
-  font-weight:500;margin-bottom:1.6rem;
-}
-.hero-badge span{
-  display:inline-block;width:28px;height:1px;background:var(--saffron);
-}
-
-.hero-h1{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(3.2rem,9vw,8rem);font-weight:700;line-height:.96;
-  letter-spacing:-.025em;max-width:800px;
-}
+/* HERO */
+.hero{min-height:100dvh;display:flex;flex-direction:column;justify-content:center;padding:9rem 3rem 5rem;position:relative;overflow:hidden}
+.hero-wm{position:absolute;right:-2%;bottom:-5%;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(10rem,28vw,30rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(255,140,0,.05);pointer-events:none;user-select:none}
+.hero::after{content:'';position:absolute;top:-10%;left:-15%;width:60vw;height:60vw;background:radial-gradient(circle,rgba(255,140,0,.055) 0%,transparent 65%);pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--saffron);font-weight:500;margin-bottom:1.6rem}
+.hero-badge span{display:inline-block;width:28px;height:1px;background:var(--saffron)}
+.hero-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,9vw,8rem);font-weight:700;line-height:.96;letter-spacing:-.025em;max-width:800px}
 .hero-h1 .accent{color:var(--saffron)}
-.hero-h1 .accent2{color:var(--rose)}
+.hero-sub{margin-top:2rem;font-size:clamp(.95rem,1.8vw,1.2rem);color:var(--ink2);max-width:540px;line-height:1.75}
+.lang-pills{display:flex;gap:.7rem;margin-top:2rem;flex-wrap:wrap}
+.lpill{padding:.4rem 1rem;border-radius:40px;font-size:.72rem;font-weight:500;border:1px solid}
+.lpill-p{border-color:var(--saffron);color:var(--saffron);background:rgba(255,140,0,.08)}
+.lpill-h{border-color:var(--rose);color:var(--rose);background:rgba(232,56,90,.08)}
+.hero-actions{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:2.5rem}
 
-.hero-sub{
-  margin-top:2rem;font-size:clamp(.95rem,1.8vw,1.2rem);
-  color:var(--ink2);max-width:540px;line-height:1.75;
-}
-
-/* rotating mood words */
-.mood-rotate-wrap{
-  margin-top:2.2rem;
-  display:flex;align-items:center;gap:1rem;flex-wrap:wrap;
-}
-.mood-rotate-label{font-size:.75rem;color:var(--ink2);letter-spacing:.08em}
-.mood-rotate{
-  font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;
-  min-width:130px;
-  transition:color .4s;
-}
-
-.hero-actions{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:2.8rem}
-
-.btn{
-  display:inline-flex;align-items:center;gap:.5rem;
-  padding:.78rem 1.7rem;border-radius:var(--r);border:none;cursor:pointer;
-  font-family:'DM Sans',sans-serif;font-size:.76rem;font-weight:600;
-  letter-spacing:.1em;text-transform:uppercase;transition:all .22s;
-}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.78rem 1.7rem;border-radius:var(--r);border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.76rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;transition:all .22s}
+.btn-yt{background:#FF0000;color:#fff}
+.btn-yt:hover{background:#cc0000;transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,0,0,.35)}
 .btn-gold{background:var(--saffron);color:#07070E}
 .btn-gold:hover{background:#ffA020;transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,140,0,.3)}
 .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--border)}
 .btn-ghost:hover{border-color:rgba(255,140,0,.35);color:var(--saffron)}
 
-/* lang pills in hero */
-.lang-pills{display:flex;gap:.7rem;margin-top:3rem;flex-wrap:wrap}
-.lpill{
-  padding:.4rem 1rem;border-radius:40px;font-size:.72rem;font-weight:500;letter-spacing:.08em;
-  border:1px solid;
+/* SUBSCRIBE BANNER */
+.yt-banner{
+  background:linear-gradient(135deg,#1a0000 0%,#0d0d1a 50%,#1a0008 100%);
+  border-top:1px solid rgba(255,0,0,.15);border-bottom:1px solid rgba(255,0,0,.15);
+  padding:3.5rem 3rem;
 }
-.lpill-p{border-color:var(--saffron);color:var(--saffron);background:rgba(255,140,0,.08)}
-.lpill-h{border-color:var(--rose);color:var(--rose);background:rgba(232,56,90,.08)}
-
-/*─────────────────────────────────────────
-  WHY SECTION — convincing singers
-─────────────────────────────────────────*/
-.why{
-  padding:5.5rem 3rem;
-  background:var(--s1);
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-}
-.why-inner{max-width:1160px;margin:0 auto}
-
-.sec-eyebrow{
-  font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;
-  color:var(--saffron);font-weight:500;margin-bottom:.9rem;
+.yt-banner-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.yt-banner-left{display:flex;align-items:center;gap:1.5rem}
+.yt-logo-big{width:60px;height:60px;background:#FF0000;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.yt-banner-text h2{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;margin-bottom:.3rem}
+.yt-banner-text p{font-size:.88rem;color:var(--ink2)}
+.yt-banner-text p strong{color:#FF4444}
+.yt-sub-btn{
   display:flex;align-items:center;gap:.6rem;
+  background:#FF0000;color:#fff;
+  font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:.9rem 2.2rem;border-radius:var(--r);
+  transition:all .25s;white-space:nowrap;flex-shrink:0;
+  box-shadow:0 4px 20px rgba(255,0,0,.3);
 }
+.yt-sub-btn:hover{background:#cc0000;transform:translateY(-2px);box-shadow:0 8px 32px rgba(255,0,0,.45)}
+.yt-sub-btn svg{animation:bell 2s ease-in-out infinite}
+@keyframes bell{0%,90%,100%{transform:rotate(0)}95%{transform:rotate(15deg)}}
+
+/* WHY */
+.why{padding:5rem 3rem;background:var(--s1);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.why-inner{max-width:1160px;margin:0 auto}
+.sec-eyebrow{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--saffron);font-weight:500;margin-bottom:.9rem;display:flex;align-items:center;gap:.6rem}
 .sec-eyebrow::before{content:'';display:inline-block;width:22px;height:1px;background:var(--saffron)}
-
-.sec-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(1.9rem,4vw,3rem);font-weight:700;
-  line-height:1.1;letter-spacing:-.015em;
-  max-width:640px;margin-bottom:3rem;
-}
-
-.why-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
-  gap:1.2rem;
-}
-.why-card{
-  background:var(--s2);border:1px solid var(--border);border-radius:var(--r);
-  padding:1.8rem 1.5rem;transition:border-color .25s;
-}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,4vw,3rem);font-weight:700;line-height:1.1;letter-spacing:-.015em;max-width:640px;margin-bottom:2.5rem}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.2rem}
+.why-card{background:var(--s2);border:1px solid var(--border);border-radius:var(--r);padding:1.8rem 1.5rem;transition:border-color .25s}
 .why-card:hover{border-color:rgba(255,140,0,.3)}
 .why-icon{font-size:1.6rem;margin-bottom:1rem}
 .why-card h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;margin-bottom:.5rem}
 .why-card p{font-size:.85rem;color:var(--ink2);line-height:1.7}
 
-/*─────────────────────────────────────────
-  SONGS SECTION
-─────────────────────────────────────────*/
-.songs-section{padding:5.5rem 3rem}
+/* SONGS */
+.songs-section{padding:5rem 3rem}
 .songs-inner{max-width:1160px;margin:0 auto}
-
-/* Filter bar */
-.filter-bar{
-  display:flex;flex-direction:column;gap:1rem;
-  margin-bottom:2.8rem;
-  background:var(--s1);border:1px solid var(--border);
-  border-radius:var(--r);padding:1.2rem 1.4rem;
-}
+.filter-bar{display:flex;flex-direction:column;gap:1rem;margin-bottom:2.5rem;background:var(--s1);border:1px solid var(--border);border-radius:var(--r);padding:1.2rem 1.4rem}
 .filter-row{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
 .filter-label{font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);width:70px;flex-shrink:0;font-weight:500}
-.fpill{
-  padding:.38rem .95rem;border-radius:40px;font-size:.76rem;font-weight:500;cursor:pointer;
-  border:1px solid var(--border);color:var(--ink2);background:transparent;
-  transition:all .2s;font-family:'DM Sans',sans-serif;
-}
+.fpill{padding:.38rem .95rem;border-radius:40px;font-size:.76rem;font-weight:500;cursor:pointer;border:1px solid var(--border);color:var(--ink2);background:transparent;transition:all .2s;font-family:'DM Sans',sans-serif}
 .fpill:hover{border-color:rgba(255,255,255,.2);color:var(--ink)}
-
-/* language active states */
 .fpill.lang-all.active{background:var(--saffron);color:#07070E;border-color:var(--saffron)}
 .fpill.lang-punjabi.active{background:rgba(255,140,0,.15);color:var(--saffron);border-color:var(--saffron)}
 .fpill.lang-hindi.active{background:rgba(232,56,90,.15);color:var(--rose);border-color:var(--rose)}
-
-/* mood active states */
 .fpill.mood-all.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .fpill.mood-sad.active{background:rgba(74,144,217,.15);color:var(--sad);border-color:var(--sad)}
 .fpill.mood-romantic.active{background:rgba(240,84,140,.15);color:var(--romantic);border-color:var(--romantic)}
 .fpill.mood-beats.active{background:rgba(139,92,246,.15);color:var(--beats);border-color:var(--beats)}
-
-/* count badge */
 .songs-count{font-size:.78rem;color:var(--ink2);margin-bottom:1rem;min-height:1.2rem}
 
-/* Songs grid */
-.songs-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
-  gap:1.1rem;
-}
+/* SONG CARDS — thumbnail style, click = YouTube view */
+.songs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem}
+
 .song-card{
+  display:block;text-decoration:none;color:var(--ink);
   background:var(--s1);border:1px solid var(--border);border-radius:var(--r);
-  padding:1.5rem;display:flex;flex-direction:column;gap:.9rem;
-  cursor:pointer;text-decoration:none;color:var(--ink);
-  transition:transform .22s, border-color .22s, box-shadow .22s;
-  position:relative;overflow:hidden;
+  overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s;
+  cursor:pointer;
 }
-.song-card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  transform:scaleX(0);transform-origin:left;transition:transform .3s;
-}
-.song-card.sad-card::before{background:var(--sad)}
-.song-card.romantic-card::before{background:var(--romantic)}
-.song-card.beats-card::before{background:var(--beats)}
+.song-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,.5);border-color:rgba(255,0,0,.3)}
 
-.song-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,.4);border-color:rgba(255,255,255,.14)}
-.song-card:hover::before{transform:scaleX(1)}
-
-.card-badges{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
-.badge{
-  padding:.22rem .65rem;border-radius:40px;font-size:.62rem;font-weight:600;
-  letter-spacing:.08em;text-transform:uppercase;
+/* Thumbnail with play button overlay */
+.card-thumb{
+  position:relative;width:100%;padding-top:56.25%;/* 16:9 */
+  background:#111;overflow:hidden;
 }
+.card-thumb img{
+  position:absolute;top:0;left:0;width:100%;height:100%;
+  object-fit:cover;transition:transform .35s,filter .35s;
+  filter:brightness(.85);
+}
+.song-card:hover .card-thumb img{transform:scale(1.04);filter:brightness(1)}
+
+/* Big red play button in center */
+.card-play{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(1);
+  width:58px;height:58px;border-radius:50%;
+  background:rgba(255,0,0,.9);
+  display:flex;align-items:center;justify-content:center;
+  transition:transform .25s,background .25s;
+  box-shadow:0 4px 20px rgba(0,0,0,.5);
+}
+.song-card:hover .card-play{transform:translate(-50%,-50%) scale(1.12);background:#FF0000}
+.card-play svg{margin-left:4px}
+
+/* YouTube badge on thumbnail */
+.card-yt-badge{
+  position:absolute;bottom:8px;right:8px;
+  background:rgba(0,0,0,.75);border-radius:3px;
+  padding:.18rem .45rem;font-size:.62rem;font-weight:700;
+  color:#fff;letter-spacing:.04em;display:flex;align-items:center;gap:.3rem;
+}
+
+/* Card body below thumbnail */
+.card-body{padding:1.1rem 1.2rem}
+.card-badges{display:flex;gap:.45rem;flex-wrap:wrap;margin-bottom:.7rem}
+.badge{padding:.2rem .6rem;border-radius:40px;font-size:.6rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
 .badge-punjabi{background:rgba(255,140,0,.12);color:var(--saffron);border:1px solid rgba(255,140,0,.25)}
 .badge-hindi{background:rgba(232,56,90,.12);color:var(--rose);border:1px solid rgba(232,56,90,.25)}
 .badge-sad{background:rgba(74,144,217,.12);color:var(--sad);border:1px solid rgba(74,144,217,.25)}
 .badge-romantic{background:rgba(240,84,140,.12);color:var(--romantic);border:1px solid rgba(240,84,140,.25)}
 .badge-beats{background:rgba(139,92,246,.12);color:var(--beats);border:1px solid rgba(139,92,246,.25)}
+.card-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;line-height:1.25;margin-bottom:.3rem}
+.card-singer{font-size:.76rem;color:var(--ink2)}
+.card-watch{
+  display:flex;align-items:center;justify-content:center;gap:.5rem;
+  margin-top:.9rem;padding:.6rem;border-radius:4px;
+  background:rgba(255,0,0,.08);border:1px solid rgba(255,0,0,.2);
+  font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:#FF4444;transition:all .2s;
+}
+.song-card:hover .card-watch{background:#FF0000;border-color:#FF0000;color:#fff}
 
-.card-title{
-  font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;
-  line-height:1.25;flex:1;
-}
-.card-singer{font-size:.78rem;color:var(--ink2)}
-
-.card-foot{
-  display:flex;align-items:center;justify-content:space-between;
-  padding-top:.9rem;border-top:1px solid var(--border);
-}
-.card-yt{
-  display:flex;align-items:center;gap:.45rem;
-  font-size:.72rem;color:var(--ink2);font-weight:500;
-}
-.card-yt svg{flex-shrink:0}
-.listen-btn{
-  display:flex;align-items:center;gap:.35rem;
-  padding:.35rem .85rem;border-radius:40px;
-  font-size:.7rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
-  background:rgba(255,255,255,.06);border:1px solid var(--border);
-  transition:all .2s;color:var(--ink);
-}
-.song-card:hover .listen-btn{
-  background:var(--saffron);border-color:var(--saffron);color:#07070E;
-}
-
-/* empty state */
-.songs-empty{
-  grid-column:1/-1;text-align:center;padding:4rem 2rem;color:var(--ink2);font-size:.9rem;
-}
-
-/* loading skeleton */
-.skeleton{
-  background:linear-gradient(90deg,var(--s1) 25%,var(--s2) 50%,var(--s1) 75%);
-  background-size:200% 100%;
-  animation:shimmer 1.4s infinite;
-  border-radius:var(--r);
-}
+/* skeleton */
+.skel-card{border-radius:var(--r);overflow:hidden;background:var(--s1);border:1px solid var(--border)}
+.skel-thumb{height:160px;background:linear-gradient(90deg,var(--s1) 25%,var(--s2) 50%,var(--s1) 75%);background-size:200% 100%;animation:shimmer 1.4s infinite}
+.skel-body{padding:1rem;display:flex;flex-direction:column;gap:.6rem}
+.skel-line{height:.7rem;border-radius:4px;background:linear-gradient(90deg,var(--s1) 25%,var(--s2) 50%,var(--s1) 75%);background-size:200% 100%;animation:shimmer 1.4s infinite}
 @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
-.skel-card{height:170px;background:var(--s1);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
-.skel-inner{height:100%;background:linear-gradient(90deg,var(--s1) 25%,var(--s2) 50%,var(--s1) 75%);background-size:200% 100%;animation:shimmer 1.4s infinite}
+.songs-empty{grid-column:1/-1;text-align:center;padding:4rem 2rem;color:var(--ink2)}
 
-/*─────────────────────────────────────────
-  CONTACT
-─────────────────────────────────────────*/
-.contact{
-  padding:5.5rem 3rem;
-  background:var(--s1);
-  border-top:1px solid var(--border);
+/* MID-PAGE SUBSCRIBE NUDGE */
+.yt-mid{
+  margin-top:2.5rem;padding:1.8rem 2rem;
+  background:linear-gradient(90deg,rgba(255,0,0,.06),rgba(255,0,0,.03));
+  border:1px solid rgba(255,0,0,.18);border-radius:var(--r);
+  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;
 }
+.yt-mid p{font-size:.92rem;color:var(--ink2)}
+.yt-mid p strong{color:var(--ink)}
+
+/* BLOG */
+.blog{padding:5rem 3rem;background:var(--s1);border-top:1px solid var(--border)}
+.blog-inner{max-width:1160px;margin:0 auto}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.2rem;margin-top:2.5rem}
+details.blog-card{background:var(--s2);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:border-color .25s}
+details.blog-card:hover{border-color:rgba(255,140,0,.25)}
+details.blog-card[open]{border-color:rgba(255,140,0,.35);grid-column:1/-1}
+details.blog-card summary{list-style:none;cursor:pointer;padding:1.6rem 1.8rem;display:flex;flex-direction:column;gap:.7rem;user-select:none}
+details.blog-card summary::-webkit-details-marker{display:none}
+.blog-tags{display:flex;gap:.5rem;flex-wrap:wrap}
+.blog-tag{padding:.18rem .6rem;border-radius:40px;font-size:.6rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,140,0,.1);color:var(--saffron);border:1px solid rgba(255,140,0,.2)}
+.blog-tag.tag-hindi{background:rgba(232,56,90,.1);color:var(--rose);border-color:rgba(232,56,90,.2)}
+.blog-tag.tag-tips{background:rgba(139,92,246,.1);color:var(--beats);border-color:rgba(139,92,246,.2)}
+.blog-tag.tag-sad{background:rgba(74,144,217,.1);color:var(--sad);border-color:rgba(74,144,217,.2)}
+.blog-tag.tag-romantic{background:rgba(240,84,140,.1);color:var(--romantic);border-color:rgba(240,84,140,.2)}
+.blog-card-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;line-height:1.3;color:var(--ink)}
+details[open] .blog-card-title{font-size:1.45rem}
+.blog-card-excerpt{font-size:.84rem;color:var(--ink2);line-height:1.65}
+.blog-read-toggle{display:flex;align-items:center;gap:.4rem;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--saffron);margin-top:.3rem}
+details[open] .read-more-txt{display:none}
+details:not([open]) .read-less-txt{display:none}
+.blog-body{padding:0 1.8rem 2rem;border-top:1px solid var(--border);margin-top:.5rem}
+.blog-body h3{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:700;color:var(--ink);margin:1.6rem 0 .6rem}
+.blog-body p{font-size:.9rem;color:var(--ink2);line-height:1.85;margin-bottom:1rem}
+.blog-body strong{color:var(--ink);font-weight:500}
+.blog-body ul{padding-left:1.2rem;margin-bottom:1rem}
+.blog-body ul li{font-size:.9rem;color:var(--ink2);line-height:1.7;margin-bottom:.4rem}
+.blog-cta-inline{margin-top:1.5rem;padding:1.2rem 1.5rem;background:rgba(255,140,0,.06);border:1px solid rgba(255,140,0,.2);border-radius:var(--r)}
+.blog-cta-inline p{font-size:.88rem;color:var(--ink);margin-bottom:.8rem;font-style:italic}
+
+/* CONTACT */
+.contact{padding:5rem 3rem;background:var(--s1);border-top:1px solid var(--border)}
 .contact-inner{max-width:1160px;margin:0 auto}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-
 .contact-copy p{font-size:.95rem;color:var(--ink2);line-height:1.85;margin-top:.9rem}
 .process-list{margin-top:2rem;display:flex;flex-direction:column;gap:.8rem}
-.proc-item{
-  display:flex;align-items:flex-start;gap:.9rem;
-  background:var(--s2);border:1px solid var(--border);border-radius:var(--r);
-  padding:1rem 1.2rem;
-}
-.proc-icon{
-  width:32px;height:32px;border-radius:50%;
-  background:rgba(255,140,0,.1);border:1px solid rgba(255,140,0,.25);
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  font-size:.85rem;
-}
+.proc-item{display:flex;align-items:flex-start;gap:.9rem;background:var(--s2);border:1px solid var(--border);border-radius:var(--r);padding:1rem 1.2rem}
+.proc-icon{width:32px;height:32px;border-radius:50%;background:rgba(255,140,0,.1);border:1px solid rgba(255,140,0,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.85rem}
 .proc-text{font-size:.84rem;color:var(--ink2);line-height:1.55}
 .proc-text strong{display:block;font-size:.88rem;color:var(--ink);margin-bottom:.15rem;font-weight:500}
-
-.cta-box{
-  background:var(--s2);border:1px solid var(--border);border-radius:var(--r);
-  padding:2rem;
-}
-.cta-box-title{
-  font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;margin-bottom:.6rem;
-}
+.cta-box{background:var(--s2);border:1px solid var(--border);border-radius:var(--r);padding:2rem}
+.cta-box-title{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;margin-bottom:.6rem}
 .cta-box p{font-size:.88rem;color:var(--ink2);margin-bottom:1.8rem;line-height:1.7}
 .cta-channels{display:flex;flex-direction:column;gap:.8rem}
-.ch{
-  display:flex;align-items:center;gap:.9rem;
-  padding:1rem 1.1rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--r);
-  transition:border-color .2s,transform .2s;
-}
+.ch{display:flex;align-items:center;gap:.9rem;padding:1rem 1.1rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--r);transition:border-color .2s,transform .2s}
 .ch:hover{border-color:rgba(255,140,0,.3);transform:translateX(3px)}
-.ch-ic{
-  width:38px;height:38px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  background:rgba(255,140,0,.08);border:1px solid rgba(255,140,0,.2);
-}
+.ch-ic{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:rgba(255,140,0,.08);border:1px solid rgba(255,140,0,.2)}
 .ch-info{flex:1}
 .ch-lbl{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2)}
 .ch-val{font-size:.88rem;font-weight:500;margin-top:.1rem}
 .ch-arr{color:var(--ink2);transition:transform .2s,color .2s}
 .ch:hover .ch-arr{transform:translateX(3px);color:var(--saffron)}
 
-.mail-cta-btn{
-  display:flex;justify-content:center;margin-top:1rem;
-}
-
-/*─────────────────────────────────────────
-  FOOTER
-─────────────────────────────────────────*/
-footer{
-  padding:1.6rem 3rem;border-top:1px solid var(--border);
-  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.8rem;
-}
-footer p{font-size:.72rem;color:var(--ink3);letter-spacing:.04em}
+/* FOOTER */
+footer{padding:1.6rem 3rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.8rem}
+footer p{font-size:.72rem;color:var(--ink3)}
 footer a{color:var(--saffron)}
-footer a:hover{text-decoration:underline}
 
-/*─────────────────────────────────────────
-  RESPONSIVE
-─────────────────────────────────────────*/
+/* RESPONSIVE */
 @media(max-width:900px){
   nav{padding:1rem 1.5rem}
-  .hero,.why,.songs-section,.contact{padding-left:1.5rem;padding-right:1.5rem}
+  .hero,.yt-banner,.why,.songs-section,.blog,.contact{padding-left:1.5rem;padding-right:1.5rem}
+  .yt-banner-inner{flex-direction:column;text-align:center}
+  .yt-banner-left{flex-direction:column;text-align:center}
   .contact-grid{grid-template-columns:1fr;gap:2.5rem}
   footer{padding:1.2rem 1.5rem;flex-direction:column;text-align:center}
 }
 @media(max-width:600px){
   .nav-links{display:none}
   .hero-wm{display:none}
-  .why-grid{grid-template-columns:1fr}
-  .songs-grid{grid-template-columns:1fr}
+  .why-grid,.songs-grid{grid-template-columns:1fr}
   .filter-label{width:auto}
+  .blog-grid{grid-template-columns:1fr}
+  details.blog-card[open]{grid-column:auto}
+  .yt-mid{flex-direction:column;text-align:center}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-
-/*─────────────────────────────────────────
-  BLOG
-─────────────────────────────────────────*/
-.blog{
-  padding:5.5rem 3rem;
-  background:var(--s1);
-  border-top:1px solid var(--border);
-}
-.blog-inner{max-width:1160px;margin:0 auto}
-
-.blog-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-  gap:1.2rem;
-  margin-top:2.5rem;
-}
-
-details.blog-card{
-  background:var(--s2);
-  border:1px solid var(--border);
-  border-radius:var(--r);
-  overflow:hidden;
-  transition:border-color .25s;
-}
-details.blog-card:hover{border-color:rgba(255,140,0,.25)}
-details.blog-card[open]{border-color:rgba(255,140,0,.35);grid-column:1/-1}
-
-details.blog-card summary{
-  list-style:none;cursor:pointer;padding:1.6rem 1.8rem;
-  display:flex;flex-direction:column;gap:.7rem;
-  user-select:none;
-}
-details.blog-card summary::-webkit-details-marker{display:none}
-
-.blog-tags{display:flex;gap:.5rem;flex-wrap:wrap}
-.blog-tag{
-  padding:.18rem .6rem;border-radius:40px;font-size:.6rem;font-weight:600;
-  letter-spacing:.08em;text-transform:uppercase;
-  background:rgba(255,140,0,.1);color:var(--saffron);border:1px solid rgba(255,140,0,.2);
-}
-.blog-tag.tag-hindi{background:rgba(232,56,90,.1);color:var(--rose);border-color:rgba(232,56,90,.2)}
-.blog-tag.tag-tips{background:rgba(139,92,246,.1);color:var(--beats);border-color:rgba(139,92,246,.2)}
-.blog-tag.tag-sad{background:rgba(74,144,217,.1);color:var(--sad);border-color:rgba(74,144,217,.2)}
-.blog-tag.tag-romantic{background:rgba(240,84,140,.1);color:var(--romantic);border-color:rgba(240,84,140,.2)}
-
-.blog-card-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.2rem;font-weight:700;line-height:1.3;color:var(--ink);
-}
-details[open] .blog-card-title{font-size:1.45rem}
-
-.blog-card-excerpt{font-size:.84rem;color:var(--ink2);line-height:1.65}
-
-.blog-read-toggle{
-  display:flex;align-items:center;gap:.4rem;
-  font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--saffron);margin-top:.3rem;
-}
-details[open] .read-more-txt{display:none}
-details:not([open]) .read-less-txt{display:none}
-
-.blog-body{
-  padding:0 1.8rem 2rem;border-top:1px solid var(--border);
-  margin-top:.5rem;
-}
-.blog-body h3{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.05rem;font-weight:700;color:var(--ink);
-  margin:1.6rem 0 .6rem;
-}
-.blog-body p{
-  font-size:.9rem;color:var(--ink2);line-height:1.85;margin-bottom:1rem;
-}
-.blog-body strong{color:var(--ink);font-weight:500}
-.blog-body ul{
-  padding-left:1.2rem;margin-bottom:1rem;
-}
-.blog-body ul li{
-  font-size:.9rem;color:var(--ink2);line-height:1.7;margin-bottom:.4rem;
-}
-.blog-cta-inline{
-  margin-top:1.5rem;padding:1.2rem 1.5rem;
-  background:rgba(255,140,0,.06);border:1px solid rgba(255,140,0,.2);border-radius:var(--r);
-}
-.blog-cta-inline p{
-  font-size:.88rem;color:var(--ink);margin-bottom:.8rem;font-style:italic;
-}
-
-@media(max-width:900px){
-  .blog{padding-left:1.5rem;padding-right:1.5rem}
-  details.blog-card[open]{grid-column:auto}
-}
-@media(max-width:600px){
-  .blog-grid{grid-template-columns:1fr}
-}
 </style>
 </head>
 <body>
 
-  <div class="video-modal" id="video-modal">
-  <div class="video-modal-inner">
-    <div class="video-modal-head">
-      <span class="video-modal-title" id="video-modal-title">Now Playing</span>
-      <button class="video-modal-close" id="video-modal-close" aria-label="Close">&times;</button>
-    </div>
-    <div class="video-modal-frame">
-      <iframe id="video-modal-iframe" src="" title="YouTube player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════
-     NAV
-══════════════════════════════════════ -->
 <nav>
   <a href="#" class="logo">Harpal <em>Dhiman</em></a>
   <ul class="nav-links">
     <li><a href="#songs">Songs</a></li>
     <li><a href="#blog">Blog</a></li>
     <li><a href="#contact">Collaborate</a></li>
-    <li><a href="https://www.youtube.com/@Harpaldhimanofficial" target="_blank" rel="noopener">YouTube</a></li>
   </ul>
-  <a href="mailto:harpallyricsbeats@gmail.com?subject=Lyrics Collaboration" class="nav-cta">Get Lyrics</a>
+  <a href="https://www.youtube.com/@Harpaldhimanofficial?sub_confirmation=1" target="_blank" rel="noopener" class="nav-yt">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2-.9C16.8 5 12 5 12 5s-4.8 0-7 .1c-.4 0-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.8C6.8 19 12 19 12 19s4.8 0 7-.2c.4 0 1.2-.1 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.7V9.3l5.5 2.7-5.5 2.7z"/></svg>
+    Subscribe
+  </a>
 </nav>
 
-
-<!-- ══════════════════════════════════════
-     HERO
-══════════════════════════════════════ -->
 <header class="hero">
   <div class="hero-wm" aria-hidden="true">ਸ਼ਬਦ</div>
-
   <p class="hero-badge"><span></span>Lyricist &amp; Songwriter</p>
-
   <h1 class="hero-h1">
-    Your voice<br>
-    deserves words<br>
+    Your voice<br>deserves words<br>
     that <span class="accent" id="mood-word">feel real.</span>
   </h1>
-
-  <p class="hero-sub">
-    I'm <strong>Harpal Dhiman</strong> — a lyricist writing in Punjabi and Hindi.
-    If you're a singer looking for original lyrics that connect with your audience,
-    you're in the right place.
-  </p>
-
+  <p class="hero-sub">I'm <strong>Harpal Dhiman</strong> — a lyricist writing in Punjabi and Hindi. Browse my songs below, listen on YouTube, and reach out to collaborate.</p>
   <div class="lang-pills">
     <span class="lpill lpill-p">ਪੰਜਾਬੀ Punjabi</span>
     <span class="lpill lpill-h">हिंदी Hindi</span>
   </div>
-
   <div class="hero-actions">
-    <a href="#songs" class="btn btn-gold">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-      Browse All Songs
+    <a href="https://www.youtube.com/@Harpaldhimanofficial?sub_confirmation=1" target="_blank" rel="noopener" class="btn btn-yt">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2-.9C16.8 5 12 5 12 5s-4.8 0-7 .1c-.4 0-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.8C6.8 19 12 19 12 19s4.8 0 7-.2c.4 0 1.2-.1 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.7V9.3l5.5 2.7-5.5 2.7z"/></svg>
+      Subscribe on YouTube
     </a>
-    <a href="mailto:harpallyricsbeats@gmail.com?subject=Lyrics Collaboration&body=Hi Harpal, I want to collaborate on lyrics." class="btn btn-ghost">
-      Message Me Directly
-    </a>
+    <a href="#songs" class="btn btn-gold">Browse Songs</a>
+    <a href="mailto:harpallyricsbeats@gmail.com?subject=Lyrics Collaboration" class="btn btn-ghost">Message Me</a>
   </div>
 </header>
 
+<!-- SUBSCRIBE BANNER -->
+<div class="yt-banner">
+  <div class="yt-banner-inner">
+    <div class="yt-banner-left">
+      <div class="yt-logo-big">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2-.9C16.8 5 12 5 12 5s-4.8 0-7 .1c-.4 0-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.8C6.8 19 12 19 12 19s4.8 0 7-.2c.4 0 1.2-.1 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.7V9.3l5.5 2.7-5.5 2.7z"/></svg>
+      </div>
+      <div class="yt-banner-text">
+        <h2>@Harpaldhimanofficial</h2>
+        <p>All my songs are on YouTube — <strong>subscribe to never miss a new release.</strong> Every view helps bring more singers to my music.</p>
+      </div>
+    </div>
+    <a href="https://www.youtube.com/@Harpaldhimanofficial?sub_confirmation=1" target="_blank" rel="noopener" class="yt-sub-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="bell-icon"><path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+      Subscribe Free
+    </a>
+  </div>
+</div>
 
-<!-- ══════════════════════════════════════
-     WHY WORK WITH ME
-══════════════════════════════════════ -->
+<!-- WHY -->
 <section class="why" id="about">
   <div class="why-inner">
     <p class="sec-eyebrow">Why Singers Choose Me</p>
     <h2 class="sec-title">Lyrics that make your listeners feel something</h2>
     <div class="why-grid">
-
-      <div class="why-card">
-        <div class="why-icon">🎯</div>
-        <h3>Written for Your Voice</h3>
-        <p>Every lyric is shaped around you — your singing style, your mood, your audience. No copy-paste, no shortcuts.</p>
-      </div>
-
-      <div class="why-card">
-        <div class="why-icon">🌍</div>
-        <h3>Punjabi &amp; Hindi Both</h3>
-        <p>Whether you're a Punjabi folk artist or a Hindi film-style singer, I write fluently in both — with the right dialect and feel.</p>
-      </div>
-
-      <div class="why-card">
-        <div class="why-icon">🎵</div>
-        <h3>Every Mood Covered</h3>
-        <p>Sad heartbreak tracks, romantic shayari-style love songs, or high-energy beats — pick your mood, I'll deliver the lines.</p>
-      </div>
-
-      <div class="why-card">
-        <div class="why-icon">🔐</div>
-        <h3>100% Original</h3>
-        <p>Your song is yours alone. I never resell or reuse lyrics. Full rights handed to you, no fine print.</p>
-      </div>
-
-      <div class="why-card">
-        <div class="why-icon">⚡</div>
-        <h3>Fast &amp; Reliable</h3>
-        <p>Tight deadlines? I respect your schedule. Most songs delivered within days, with revisions included.</p>
-      </div>
-
-      <div class="why-card">
-        <div class="why-icon">🎤</div>
-        <h3>Built to Perform</h3>
-        <p>Lyrics aren't just text — they're rhythm, breath, pause. I write lines that sit naturally in a melody and land with listeners.</p>
-      </div>
-
+      <div class="why-card"><div class="why-icon">🎯</div><h3>Written for Your Voice</h3><p>Every lyric is shaped around you — your singing style, your mood, your audience. No copy-paste, no shortcuts.</p></div>
+      <div class="why-card"><div class="why-icon">🌍</div><h3>Punjabi &amp; Hindi Both</h3><p>Whether you're a Punjabi folk artist or a Hindi film-style singer, I write fluently in both — with the right dialect and feel.</p></div>
+      <div class="why-card"><div class="why-icon">🎵</div><h3>Every Mood Covered</h3><p>Sad heartbreak tracks, romantic shayari-style love songs, or high-energy beats — pick your mood, I'll deliver the lines.</p></div>
+      <div class="why-card"><div class="why-icon">🔐</div><h3>100% Original</h3><p>Your song is yours alone. I never resell or reuse lyrics. Full rights handed to you, no fine print.</p></div>
+      <div class="why-card"><div class="why-icon">⚡</div><h3>Fast &amp; Reliable</h3><p>Tight deadlines? I respect your schedule. Most songs delivered within days, with revisions included.</p></div>
+      <div class="why-card"><div class="why-icon">🎤</div><h3>Built to Perform</h3><p>Lyrics aren't just text — they're rhythm, breath, pause. I write lines that sit naturally in a melody and land with listeners.</p></div>
     </div>
   </div>
 </section>
 
-
-<!-- ══════════════════════════════════════
-     SONGS
-══════════════════════════════════════ -->
+<!-- SONGS -->
 <section class="songs-section" id="songs">
   <div class="songs-inner">
-
     <p class="sec-eyebrow">My Work</p>
     <h2 class="sec-title" style="margin-bottom:2rem">Songs &amp; Compositions</h2>
-
-    <!-- Filter Bar -->
     <div class="filter-bar">
       <div class="filter-row">
         <span class="filter-label">Language</span>
@@ -704,562 +371,277 @@ details:not([open]) .read-less-txt{display:none}
         <button class="fpill mood-beats" data-mood="beats">🎵 Beats</button>
       </div>
     </div>
-
     <p class="songs-count" id="songs-count"></p>
     <div class="songs-grid" id="songs-grid">
-      <!-- skeleton loaders -->
-      <div class="skel-card"><div class="skel-inner"></div></div>
-      <div class="skel-card"><div class="skel-inner"></div></div>
-      <div class="skel-card"><div class="skel-inner"></div></div>
-      <div class="skel-card"><div class="skel-inner"></div></div>
-      <div class="skel-card"><div class="skel-inner"></div></div>
-      <div class="skel-card"><div class="skel-inner"></div></div>
+      <div class="skel-card"><div class="skel-thumb"></div><div class="skel-body"><div class="skel-line" style="width:40%"></div><div class="skel-line" style="width:75%"></div></div></div>
+      <div class="skel-card"><div class="skel-thumb"></div><div class="skel-body"><div class="skel-line" style="width:35%"></div><div class="skel-line" style="width:80%"></div></div></div>
+      <div class="skel-card"><div class="skel-thumb"></div><div class="skel-body"><div class="skel-line" style="width:45%"></div><div class="skel-line" style="width:70%"></div></div></div>
+      <div class="skel-card"><div class="skel-thumb"></div><div class="skel-body"><div class="skel-line" style="width:38%"></div><div class="skel-line" style="width:85%"></div></div></div>
     </div>
 
-    <div style="text-align:center;margin-top:2.5rem">
-      <a href="https://www.youtube.com/@Harpaldhimanofficial" target="_blank" rel="noopener" class="btn btn-ghost">
+    <!-- mid-page subscribe nudge -->
+    <div class="yt-mid">
+      <p><strong>Enjoyed a song?</strong> Every view on YouTube helps. Subscribe to the channel and turn on notifications — new lyrics drop regularly.</p>
+      <a href="https://www.youtube.com/@Harpaldhimanofficial?sub_confirmation=1" target="_blank" rel="noopener" class="btn btn-yt" style="flex-shrink:0">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2-.9C16.8 5 12 5 12 5s-4.8 0-7 .1c-.4 0-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.8C6.8 19 12 19 12 19s4.8 0 7-.2c.4 0 1.2-.1 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.7V9.3l5.5 2.7-5.5 2.7z"/></svg>
-        View Full YouTube Channel
+        Subscribe on YouTube
       </a>
     </div>
-
   </div>
 </section>
 
-
-<!-- ══════════════════════════════════════
-     BLOG
-══════════════════════════════════════ -->
+<!-- BLOG -->
 <section class="blog" id="blog">
   <div class="blog-inner">
     <p class="sec-eyebrow">Blog &amp; Insights</p>
     <h2 class="sec-title">Lyrics, Music &amp; the Stories Behind Them</h2>
-
     <div class="blog-grid">
-
-      <!-- ── POST 1 ── -->
       <details class="blog-card">
         <summary>
-          <div class="blog-tags">
-            <span class="blog-tag">Punjabi</span>
-            <span class="blog-tag tag-sad">Sad Songs</span>
-          </div>
+          <div class="blog-tags"><span class="blog-tag">Punjabi</span><span class="blog-tag tag-sad">Sad Songs</span></div>
           <div class="blog-card-title">ਦਰਦ ਜੋ ਦਿਲ ਤੱਕ ਪਹੁੰਚੇ — What Makes a Punjabi Sad Song Feel Like Your Own Story</div>
           <div class="blog-card-excerpt">Sad Punjabi songs don't just make you cry — they make you feel understood. Here's why the best Punjabi sad lyrics hit so differently, and what separates a song that trends from one that lasts.</div>
-          <div class="blog-read-toggle">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-            <span class="read-more-txt">Read full article</span>
-            <span class="read-less-txt">Close</span>
-          </div>
+          <div class="blog-read-toggle"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg><span class="read-more-txt">Read full article</span><span class="read-less-txt">Close</span></div>
         </summary>
         <div class="blog-body">
           <p>There is a reason sad Punjabi songs have a separate fanbase altogether. Punjabi music is known globally for its energy, its dhol beats, and its celebration — but when a Punjabi sad song lands, it lands deep. Songs like these don't just play in the background; they replay in the mind for days.</p>
-          <p>As a Punjabi lyricist, I've spent years studying what separates a sad song that touches one person from one that touches millions. And the answer is always the same: <strong>specificity</strong>. The most powerful sad Punjabi lyrics don't say "I am sad." They say exactly what that sadness feels like — the empty chair at the table, the phone you keep unlocking hoping for a message that won't come, the smell of the person who is no longer there.</p>
+          <p>As a Punjabi lyricist, I've spent years studying what separates a sad song that touches one person from one that touches millions. And the answer is always the same: <strong>specificity</strong>. The most powerful sad Punjabi lyrics don't say "I am sad." They say exactly what that sadness feels like — the empty chair at the table, the phone you keep unlocking hoping for a message that won't come.</p>
           <h3>Why Punjabi Sad Lyrics Hit Differently</h3>
-          <p>The Punjabi language carries centuries of folk poetry — the Heer-Ranjha tradition, the kafi of Bulleh Shah, the vaars of the Gurus. This is a language that was built to express emotion. When you write a sad lyric in Punjabi, you're writing in a tradition that already knows how to cry without shame. That depth is built in.</p>
-          <p>But language alone isn't enough. A sad Punjabi song works when the listener says, "Yaar, yeh taan meri hi gal hai" — "This is literally my story." That recognition only happens when the lyric is honest, not poetic for the sake of being poetic.</p>
+          <p>The Punjabi language carries centuries of folk poetry — the Heer-Ranjha tradition, the kafi of Bulleh Shah, the vaars of the Gurus. This is a language built to express emotion. When you write a sad lyric in Punjabi, you're writing in a tradition that already knows how to cry without shame.</p>
           <h3>The Three Things Every Sad Punjabi Lyric Needs</h3>
           <ul>
-            <li><strong>A specific image</strong> — Not "I miss you" but "Teri yaad aundi hai jado chai bananda haan akela" (Your memory comes when I make tea alone). Specific moments carry universal feeling.</li>
-            <li><strong>Breath and pause</strong> — A sad lyric must be singable. If a singer has to rush through it, the emotion gets lost. I write lines that breathe, that have natural rests where the feeling can settle.</li>
-            <li><strong>An honest ending</strong> — Most sad songs either resolve too quickly (fake hope) or wallow without purpose. The best sad Punjabi lyrics end in a kind of acceptance that is itself painful — not "I'm fine now" but "I've learned to live with this."</li>
+            <li><strong>A specific image</strong> — Not "I miss you" but "Teri yaad aundi hai jado chai bananda haan akela." Specific moments carry universal feeling.</li>
+            <li><strong>Breath and pause</strong> — A sad lyric must be singable. I write lines that breathe, that have natural rests where the feeling can settle.</li>
+            <li><strong>An honest ending</strong> — The best sad Punjabi lyrics end in acceptance — not "I'm fine now" but "I've learned to live with this."</li>
           </ul>
-          <p>If you're a singer looking for a sad Punjabi song that will genuinely move your audience — not just trend for a week — that's exactly what I write. Every lyric is built from the inside out, starting with the feeling and working toward the words, never the other way around.</p>
-          <div class="blog-cta-inline">
-            <p>"Looking for original sad Punjabi lyrics for your next track?"</p>
-            <a href="mailto:harpallyricsbeats@gmail.com?subject=Sad Punjabi Song Lyrics Collaboration&body=Hi Harpal, I need sad Punjabi lyrics for my song." class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.3rem">Contact Harpal →</a>
-          </div>
+          <div class="blog-cta-inline"><p>"Looking for original sad Punjabi lyrics for your next track?"</p><a href="mailto:harpallyricsbeats@gmail.com?subject=Sad Punjabi Song Lyrics&body=Hi Harpal, I need sad Punjabi lyrics." class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.3rem">Contact Harpal →</a></div>
         </div>
       </details>
-
-      <!-- ── POST 2 ── -->
       <details class="blog-card">
         <summary>
-          <div class="blog-tags">
-            <span class="blog-tag tag-tips">For Singers</span>
-            <span class="blog-tag">Punjabi</span>
-            <span class="blog-tag tag-hindi">Hindi</span>
-          </div>
+          <div class="blog-tags"><span class="blog-tag tag-tips">For Singers</span><span class="blog-tag">Punjabi</span><span class="blog-tag tag-hindi">Hindi</span></div>
           <div class="blog-card-title">Singer ਬਣਨਾ ਚਾਹੁੰਦੇ ਹੋ? — Why Every Singer Needs an Original Lyricist (Not Google-Copied Lyrics)</div>
-          <div class="blog-card-excerpt">Copying lyrics from the internet, borrowing from old songs, or recycling lines you've heard before — it hurts your music career more than you think. Here's why original lyrics are the single biggest investment a singer can make.</div>
-          <div class="blog-read-toggle">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-            <span class="read-more-txt">Read full article</span>
-            <span class="read-less-txt">Close</span>
-          </div>
+          <div class="blog-card-excerpt">Copying lyrics from the internet hurts your music career more than you think. Here's why original lyrics are the single biggest investment a singer can make.</div>
+          <div class="blog-read-toggle"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg><span class="read-more-txt">Read full article</span><span class="read-less-txt">Close</span></div>
         </summary>
         <div class="blog-body">
-          <p>Every week, hundreds of new Punjabi and Hindi songs are released on YouTube. Most get a few hundred views and quietly disappear. A small number break through and get millions. The difference is almost never the voice — there are thousands of talented singers who never make it. The difference is almost always <strong>the song itself</strong>. And the song starts with the lyrics.</p>
-          <h3>The Problem With Copied or Generic Lyrics</h3>
-          <p>Many upcoming singers make the same mistake: they find lyrics online, ask a friend to write "something quick," or stitch together lines they've heard in popular songs. The result sounds familiar in the worst way — not nostalgic, but forgettable. The listener has already heard it, and more importantly, they don't feel the singer actually means it.</p>
-          <p>Audiences in 2025 are sophisticated. They've heard thousands of songs. They can tell within the first eight bars whether a song has something real to say. If the lyrics are borrowed or hollow, even the best voice can't save it.</p>
+          <p>Every week, hundreds of new Punjabi and Hindi songs are released on YouTube. Most get a few hundred views and quietly disappear. The difference is almost never the voice — there are thousands of talented singers who never make it. The difference is almost always <strong>the song itself</strong>. And the song starts with the lyrics.</p>
           <h3>What Original Lyrics Actually Give You</h3>
           <ul>
-            <li><strong>A song that is yours alone</strong> — No copyright dispute, no comparison, no "copy of" comment under your video.</li>
-            <li><strong>Lyrics that match your voice personality</strong> — A lyricist who writes for you adapts the rhythm, the syllable weight, and the emotional arc to how you actually sing — not a generic template.</li>
-            <li><strong>Long-term credibility</strong> — Singers who build a catalog of original songs build a fan base. Fans follow the artist, not just the trending sound.</li>
-            <li><strong>Better YouTube performance</strong> — Original content that isn't duplicated anywhere ranks better in search. Viewers complete more of the song because it's fresh.</li>
+            <li><strong>A song that is yours alone</strong> — No copyright dispute, no "copy of" comment under your video.</li>
+            <li><strong>Lyrics that match your voice personality</strong> — A lyricist who writes for you adapts the rhythm to how you actually sing.</li>
+            <li><strong>Better YouTube performance</strong> — Original content that isn't duplicated anywhere ranks better in search.</li>
           </ul>
-          <h3>How to Work With a Lyricist</h3>
-          <p>It doesn't need to be complicated. You tell me the mood — sad, romantic, beats — the language — Punjabi or Hindi — and roughly what story or feeling you want the song to carry. I write the lyrics. You review, suggest changes, and we refine together. The full rights are yours. You record, release, and it's your song completely.</p>
-          <p>The singers who take this seriously early are the ones who build lasting careers. The ones who improvise with whatever lyrics are available wonder why their music isn't growing. Original lyrics are not a luxury — they're the foundation.</p>
-          <div class="blog-cta-inline">
-            <p>"Ready to build your catalog with original Punjabi or Hindi lyrics?"</p>
-            <a href="mailto:harpallyricsbeats@gmail.com?subject=Original Lyrics Collaboration&body=Hi Harpal, I want to work with you on original lyrics for my songs." class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.3rem">Start a Collaboration →</a>
-          </div>
+          <div class="blog-cta-inline"><p>"Ready to build your catalog with original Punjabi or Hindi lyrics?"</p><a href="mailto:harpallyricsbeats@gmail.com?subject=Original Lyrics Collaboration" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.3rem">Start a Collaboration →</a></div>
         </div>
       </details>
-
-      <!-- ── POST 3 ── -->
       <details class="blog-card">
         <summary>
-          <div class="blog-tags">
-            <span class="blog-tag tag-romantic">Romantic</span>
-            <span class="blog-tag tag-hindi">Hindi</span>
-            <span class="blog-tag">Punjabi</span>
-          </div>
+          <div class="blog-tags"><span class="blog-tag tag-romantic">Romantic</span><span class="blog-tag tag-hindi">Hindi</span><span class="blog-tag">Punjabi</span></div>
           <div class="blog-card-title">Pyaar Ko Shabdon Mein — The Art of Writing Romantic Lyrics That Make Listeners Fall in Love Twice</div>
-          <div class="blog-card-excerpt">Romantic lyrics are the hardest to get right. Too sweet and they sound fake. Too vague and they say nothing. Here's what makes a romantic Punjabi or Hindi lyric genuinely land — and stay with a listener long after the song ends.</div>
-          <div class="blog-read-toggle">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-            <span class="read-more-txt">Read full article</span>
-            <span class="read-less-txt">Close</span>
-          </div>
+          <div class="blog-card-excerpt">Romantic lyrics are the hardest to get right. Too sweet and they sound fake. Here's what makes a romantic Punjabi or Hindi lyric genuinely land.</div>
+          <div class="blog-read-toggle"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg><span class="read-more-txt">Read full article</span><span class="read-less-txt">Close</span></div>
         </summary>
         <div class="blog-body">
-          <p>Romantic songs are the most listened to genre in Punjabi and Hindi music — and the most difficult to write well. The challenge isn't describing love. Everyone knows what love feels like. The challenge is describing it in a way the listener has never quite heard before, so they feel it for the first time all over again.</p>
-          <p>I've written romantic lyrics in Punjabi and Hindi for years, and the lesson I keep coming back to is this: <strong>love songs that last are not about love in the abstract — they're about one specific, concrete moment of love.</strong></p>
+          <p>Romantic songs are the most listened to genre in Punjabi and Hindi music — and the most difficult to write well. The challenge is describing love in a way the listener has never quite heard before, so they feel it for the first time all over again.</p>
           <h3>Why "Teri Aankhon Mein" Is Not Enough</h3>
-          <p>Half the romantic songs released every month contain the same images — eyes, stars, the moon, the wind, the heartbeat. These aren't bad images. But they've been used ten thousand times. When a listener hears them, nothing new fires in their brain. They nod along and forget the song before it ends.</p>
-          <p>The romantic lyrics that people screenshot and send to someone special are the ones that say something precise: the way her laugh sounds on a phone call at midnight, the specific nervousness of a first-ever meeting, the comfort of silence with the right person. Precision creates recognition, and recognition creates emotion.</p>
-          <h3>Punjabi Romantic vs Hindi Romantic — Different Registers</h3>
-          <p>Punjabi romantic songs tend to be bold, warm, and physical — the love is expressed outwardly, with colour and energy. Hindi romantic songs tend to lean more inward, more introspective, sometimes more poetic and classical in their references. Both traditions are beautiful. Both require different vocabulary, different rhythm patterns, and a different relationship between the words and the melody.</p>
-          <p>When I write romantic lyrics, I ask: what kind of love is this singer trying to express? First love, or comfortable long-term love? Longing, or celebration? That answer changes everything — the word choices, the line lengths, the ending of the song.</p>
+          <p>Half the romantic songs released every month contain the same images — eyes, stars, the moon. These have been used ten thousand times. The romantic lyrics that people screenshot and send to someone special say something precise: the way her laugh sounds on a phone call at midnight.</p>
           <h3>What Makes a Romantic Lyric Shareable</h3>
           <ul>
             <li>It describes a feeling the listener has had but never found words for</li>
             <li>It has at least one line that could stand alone as a caption or quote</li>
             <li>The emotion builds — the last chorus hits harder than the first</li>
-            <li>It doesn't try to say everything — it picks one angle and goes deep</li>
           </ul>
-          <p>If you're a singer who wants a romantic Punjabi or Hindi song that your audience will share, send to their partners, and remember years later — that's the standard I write to.</p>
-          <div class="blog-cta-inline">
-            <p>"Need romantic lyrics in Punjabi or Hindi for your next release?"</p>
-            <a href="mailto:harpallyricsbeats@gmail.com?subject=Romantic Song Lyrics&body=Hi Harpal, I need romantic lyrics for my Punjabi/Hindi song." class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.3rem">Get in Touch →</a>
-          </div>
+          <div class="blog-cta-inline"><p>"Need romantic lyrics in Punjabi or Hindi for your next release?"</p><a href="mailto:harpallyricsbeats@gmail.com?subject=Romantic Song Lyrics" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.3rem">Get in Touch →</a></div>
         </div>
       </details>
-
-      <!-- ── POST 4 ── -->
       <details class="blog-card">
         <summary>
-          <div class="blog-tags">
-            <span class="blog-tag">Punjabi</span>
-            <span class="blog-tag tag-hindi">Hindi</span>
-            <span class="blog-tag tag-tips">Beats</span>
-          </div>
-          <div class="blog-card-title">Beats Song ਲਿਖਣਾ — Why Lyrics Still Matter on a High-Energy Beats Track (And How to Get Them Right)</div>
-          <div class="blog-card-excerpt">Many producers think beats songs don't need strong lyrics — just a hook and some filler lines. That thinking is exactly why most beats songs are forgotten in a month. Here's what separates a beats track people keep playing from one that disappears.</div>
-          <div class="blog-read-toggle">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-            <span class="read-more-txt">Read full article</span>
-            <span class="read-less-txt">Close</span>
-          </div>
+          <div class="blog-tags"><span class="blog-tag">Punjabi</span><span class="blog-tag tag-hindi">Hindi</span><span class="blog-tag tag-tips">Beats</span></div>
+          <div class="blog-card-title">Beats Song ਲਿਖਣਾ — Why Lyrics Still Matter on a High-Energy Beats Track</div>
+          <div class="blog-card-excerpt">Many producers think beats songs don't need strong lyrics. That thinking is exactly why most beats songs are forgotten in a month.</div>
+          <div class="blog-read-toggle"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg><span class="read-more-txt">Read full article</span><span class="read-less-txt">Close</span></div>
         </summary>
         <div class="blog-body">
-          <p>Beats songs — high-energy Punjabi and Hindi tracks built around a strong musical rhythm — are among the most popular content on YouTube and streaming platforms. Wedding season, festival playlists, party tracks: the demand is constant. And yet, most beats songs are interchangeable. Same bounce, same energy, same hollow lyrics. They get streamed and immediately forgotten.</p>
-          <p>The ones that don't get forgotten? They always have one thing the others don't: <strong>lyrics that actually say something, even while the beat is doing most of the work.</strong></p>
-          <h3>The Common Mistake on Beats Tracks</h3>
-          <p>Producers and singers often treat lyrics as secondary on beats songs. The thinking is: the music carries the track, lyrics are just there to fill the space between drops. So they use generic lines — "party karo," "nachdi ja," "life is good" — words that technically fit the beat but add nothing to it.</p>
-          <p>This approach produces disposable content. It performs fine for a week, maybe gets picked up by one or two reels, then disappears. The algorithm moves on. The audience moves on. The singer wonders why the track didn't grow their channel.</p>
+          <p>Beats songs are among the most popular content on YouTube and streaming platforms. And yet, most beats songs are interchangeable. Same bounce, same energy, same hollow lyrics. They get streamed and immediately forgotten.</p>
           <h3>What Strong Beats Lyrics Actually Do</h3>
-          <p>A great beats lyric does the same job as any other lyric — it gives the listener a reason to care beyond the music itself. On a beats track, this means:</p>
           <ul>
-            <li><strong>A hook that sticks</strong> — One line, five to eight syllables, that fits the beat so perfectly it sounds like it was always there. This line gets repeated, quoted, used in reels, and becomes associated with the track.</li>
-            <li><strong>Energy that matches the music</strong> — Beats lyrics need hard consonants, short syllables, punchy rhythm. Words like "dhoom," "aag," "jalsa" work better than soft, flowing language because they hit on the beat instead of sliding past it.</li>
-            <li><strong>A point of view</strong> — Even a party song can have a perspective. Celebrating something specific — a hometown, a community, a feeling of freedom — gives the listener something to belong to. "We are celebrating" is generic. "Pind di sharaab, sheher da style" — that is a specific identity.</li>
+            <li><strong>A hook that sticks</strong> — One line that fits the beat so perfectly it becomes associated with the track forever.</li>
+            <li><strong>Energy that matches the music</strong> — Hard consonants, short syllables, punchy rhythm. Words like "dhoom," "aag," "jalsa" hit on the beat.</li>
+            <li><strong>A point of view</strong> — Even a party song can have a perspective. "Pind di sharaab, sheher da style" — that is a specific identity.</li>
           </ul>
-          <h3>Punjabi Beats vs Hindi Beats</h3>
-          <p>Punjabi beats lyrics tend to draw from the culture — references to land, community, pride, specific foods, specific places. Hindi beats lyrics often blend urban slang with emotional undertones, mixing bravado with a hint of longing. Both work. Both require a writer who understands not just the language but the culture behind it.</p>
-          <p>I write beats lyrics in both Punjabi and Hindi that are built to perform — not just to fill space, but to actually elevate the track and give the audience something to hold onto beyond the bass drop.</p>
-          <div class="blog-cta-inline">
-            <p>"Working on a beats track and need lyrics that hit as hard as the music?"</p>
-            <a href="mailto:harpallyricsbeats@gmail.com?subject=Beats Song Lyrics Collaboration&body=Hi Harpal, I need lyrics for a beats song." class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.3rem">Let's Work Together →</a>
-          </div>
+          <div class="blog-cta-inline"><p>"Working on a beats track and need lyrics that hit as hard as the music?"</p><a href="mailto:harpallyricsbeats@gmail.com?subject=Beats Song Lyrics" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.3rem">Let's Work Together →</a></div>
         </div>
       </details>
-
     </div>
   </div>
 </section>
 
-
-<!-- ══════════════════════════════════════
-     CONTACT
-══════════════════════════════════════ -->
+<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="contact-inner">
     <div class="contact-grid">
-
       <div class="contact-copy">
         <p class="sec-eyebrow">Collaborate</p>
         <h2 class="sec-title">Your next song starts with one message</h2>
-        <p>Singers, composers, music labels — if you need Punjabi or Hindi lyrics that land, reach out. It's simple, direct, and fast.</p>
-
+        <p>Singers, composers, music labels — if you need Punjabi or Hindi lyrics that land, reach out. Simple, direct, and fast.</p>
         <div class="process-list">
-          <div class="proc-item">
-            <div class="proc-icon">1</div>
-            <div class="proc-text">
-              <strong>Tell me about your song</strong>
-              Share the mood, language, beat feel, and what story you want to tell.
-            </div>
-          </div>
-          <div class="proc-item">
-            <div class="proc-icon">2</div>
-            <div class="proc-text">
-              <strong>I write, you review</strong>
-              I'll send you the lyrics. You ask for changes — included, no extra charge.
-            </div>
-          </div>
-          <div class="proc-item">
-            <div class="proc-icon">3</div>
-            <div class="proc-text">
-              <strong>Record &amp; release</strong>
-              Full rights are yours. Record it, release it, make it a hit.
-            </div>
-          </div>
+          <div class="proc-item"><div class="proc-icon">1</div><div class="proc-text"><strong>Tell me about your song</strong>Share the mood, language, beat feel, and what story you want to tell.</div></div>
+          <div class="proc-item"><div class="proc-icon">2</div><div class="proc-text"><strong>I write, you review</strong>I'll send you the lyrics. Revisions included, no extra charge.</div></div>
+          <div class="proc-item"><div class="proc-icon">3</div><div class="proc-text"><strong>Record &amp; release</strong>Full rights are yours. Record it, release it, make it a hit.</div></div>
         </div>
       </div>
-
       <div class="cta-box">
         <h3 class="cta-box-title">Ready to make your next hit?</h3>
         <p>Drop me a message with your idea — even a rough one. I'll take it from there.</p>
-
         <div class="cta-channels">
-          <a href="mailto:harpallyricsbeats@gmail.com?subject=Lyrics Collaboration Request&body=Hi Harpal,%0A%0AI want to collaborate on a song. Here are the details:%0A%0ALanguage: %0AMood/Type: %0AAbout the song: %0A%0A" class="ch">
-            <div class="ch-ic">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FF8C00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="4" width="20" height="16" rx="2"/>
-                <path d="M2 7l10 7 10-7"/>
-              </svg>
-            </div>
-            <div class="ch-info">
-              <div class="ch-lbl">Email</div>
-              <div class="ch-val">harpallyricsbeats@gmail.com</div>
-            </div>
-            <div class="ch-arr">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
+          <a href="mailto:harpallyricsbeats@gmail.com?subject=Lyrics Collaboration Request&body=Hi Harpal,%0A%0ALanguage: %0AMood/Type: %0AAbout the song: " class="ch">
+            <div class="ch-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FF8C00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg></div>
+            <div class="ch-info"><div class="ch-lbl">Email</div><div class="ch-val">harpallyricsbeats@gmail.com</div></div>
+            <div class="ch-arr"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
           </a>
-
-          <a href="https://www.youtube.com/@Harpaldhimanofficial" target="_blank" rel="noopener" class="ch">
-            <div class="ch-ic">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="#FF8C00">
-                <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2-.9C16.8 5 12 5 12 5s-4.8 0-7 .1c-.4 0-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.8C6.8 19 12 19 12 19s4.8 0 7-.2c.4 0 1.2-.1 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.7V9.3l5.5 2.7-5.5 2.7z"/>
-              </svg>
-            </div>
-            <div class="ch-info">
-              <div class="ch-lbl">YouTube Channel</div>
-              <div class="ch-val">@Harpaldhimanofficial</div>
-            </div>
-            <div class="ch-arr">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
+          <a href="https://www.youtube.com/@Harpaldhimanofficial?sub_confirmation=1" target="_blank" rel="noopener" class="ch">
+            <div class="ch-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="#FF0000"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2-.9C16.8 5 12 5 12 5s-4.8 0-7 .1c-.4 0-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.8C6.8 19 12 19 12 19s4.8 0 7-.2c.4 0 1.2-.1 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.7V9.3l5.5 2.7-5.5 2.7z"/></svg></div>
+            <div class="ch-info"><div class="ch-lbl">YouTube Channel</div><div class="ch-val">@Harpaldhimanofficial</div></div>
+            <div class="ch-arr"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
           </a>
         </div>
-
-        <div class="mail-cta-btn">
-          <a href="mailto:harpallyricsbeats@gmail.com?subject=Lyrics Collaboration Request&body=Hi Harpal,%0A%0AI want to collaborate on a song. Here are the details:%0A%0ALanguage: %0AMood/Type: %0AAbout the song: %0A%0A" class="btn btn-gold" style="width:100%;justify-content:center;padding:1rem">
-            Send Collaboration Request →
+        <div style="display:flex;flex-direction:column;gap:.8rem;margin-top:1rem">
+          <a href="mailto:harpallyricsbeats@gmail.com?subject=Lyrics Collaboration Request&body=Hi Harpal,%0A%0ALanguage: %0AMood/Type: %0AAbout the song: " class="btn btn-gold" style="justify-content:center;padding:1rem">Send Collaboration Request →</a>
+          <a href="https://www.youtube.com/@Harpaldhimanofficial?sub_confirmation=1" target="_blank" rel="noopener" class="btn btn-yt" style="justify-content:center;padding:1rem">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2-.9C16.8 5 12 5 12 5s-4.8 0-7 .1c-.4 0-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.8C6.8 19 12 19 12 19s4.8 0 7-.2c.4 0 1.2-.1 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.7V9.3l5.5 2.7-5.5 2.7z"/></svg>
+            Subscribe on YouTube
           </a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-
-<!-- ══════════════════════════════════════
-     FOOTER
-══════════════════════════════════════ -->
 <footer>
   <p>&copy; 2025 Harpal Dhiman — Lyricist. All rights reserved.</p>
-  <p>
-    <a href="mailto:harpallyricsbeats@gmail.com">harpallyricsbeats@gmail.com</a>
-    &nbsp;·&nbsp;
-    <a href="https://www.youtube.com/@Harpaldhimanofficial" target="_blank" rel="noopener">YouTube</a>
-  </p>
+  <p><a href="mailto:harpallyricsbeats@gmail.com">harpallyricsbeats@gmail.com</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@Harpaldhimanofficial" target="_blank" rel="noopener">YouTube</a></p>
 </footer>
 
-
-<!-- ══════════════════════════════════════
-     JAVASCRIPT
-══════════════════════════════════════ -->
 <script>
-// ═══════════════════════════════════════════════════
-//  ↓↓↓  PASTE YOUR GOOGLE SHEET ID BELOW  ↓↓↓
-//
-//  How to get it:
-//  Open your Google Sheet → look at the URL:
-//  https://docs.google.com/spreadsheets/d/  ← YOUR_ID_IS_HERE  /edit
-//
-//  Then share the sheet:  Share → Anyone with link → Viewer
-//
-//  Sheet columns (Row 1 = headers, data from Row 2):
-//    A = Song Name
-//    B = YouTube Link
-//    C = Language  (write: Punjabi  OR  Hindi)
-//    D = Category  (write: Sad  OR  Romantic  OR  Beats)
-//    E = Singer name (optional)
-// ═══════════════════════════════════════════════════
-
+// ── PASTE YOUR SHEET ID HERE ──────────────────────────
 const SHEET_ID = "1pFzCz96G52dxGNNyB18gXqA5hBv8Uywuqb67t1ij69U";
+// ─────────────────────────────────────────────────────
+// Sheet columns: A=Song Name | B=YouTube Link | C=Language | D=Category | E=Singer
 
-// ─── fetch + parse ───────────────────────────────────
 const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv`;
+let allSongs = [], activeLang = "all", activeMood = "all";
 
-let allSongs = [];
-let activeLang = "all";
-let activeMood = "all";
-
-  /* ── Video Modal wiring (was missing entirely) ── */
-const modal        = document.getElementById("video-modal");
-const modalIframe   = document.getElementById("video-modal-iframe");
-const modalTitle    = document.getElementById("video-modal-title");
-const modalClose    = document.getElementById("video-modal-close");
-
-function openVideoModal(vid, title){
-  if(!vid) return;
-  modalTitle.textContent = title || "Now Playing";
-  // unmuted this time — this is the actual "listen with sound" path
-  modalIframe.src = `https://www.youtube.com/embed/${vid}?autoplay=1&rel=0`;
-  modal.classList.add("open");
+function ytId(url){
+  const m = (url||"").match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/);
+  return m ? m[1] : null;
 }
-
-function closeVideoModal(){
-  modal.classList.remove("open");
-  modalIframe.src = ""; // critical: stops playback, otherwise it keeps playing hidden
-}
-
-modalClose.addEventListener("click", closeVideoModal);
-
-// click outside the panel closes it
-modal.addEventListener("click", (e) => {
-  if(e.target === modal) closeVideoModal();
-});
-
-// Escape key closes it
-document.addEventListener("keydown", (e) => {
-  if(e.key === "Escape" && modal.classList.contains("open")) closeVideoModal();
-});
-
-/* ── Card click → open modal with sound ── */
-// Call this once, after renderSongs() builds the cards.
-function attachCardClick(){
-  document.querySelectorAll(".song-card").forEach(card => {
-    card.addEventListener("click", (e) => {
-      // don't hijack clicks on the actual YouTube link inside the card
-      if(e.target.closest(".card-yt")) return;
-      const vid   = card.dataset.videoId;
-      const title = card.dataset.title || "";
-      openVideoModal(vid, title);
-    });
-  });
-}
+function norm(v){ return (v||"").trim().toLowerCase() }
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;") }
 
 async function initSongs(){
   const grid = document.getElementById("songs-grid");
   const count = document.getElementById("songs-count");
-
-  if(!SHEET_ID ){
-    grid.innerHTML = `
-      <div class="songs-empty" style="grid-column:1/-1">
-        <p style="font-size:1rem;margin-bottom:.5rem;color:#EDE8DF">⚙️ One-time setup needed</p>
-        <p>Open this HTML file, find <code style="color:#FF8C00;background:rgba(255,140,0,.1);padding:.15rem .4rem;border-radius:3px">SHEET_ID = "1pFzCz96G52dxGNNyB18gXqA5hBv8Uywuqb67t1ij69U"</code><br>
-        and replace it with your Google Sheet ID.<br><br>
-        <small style="opacity:.6">Share your sheet as "Anyone with link → Viewer" first.</small></p>
-      </div>`;
-    count.textContent = "";
-    return;
-  }
-
   try{
     const res = await fetch(CSV_URL);
-    if(!res.ok) throw new Error("fetch failed");
+    if(!res.ok) throw new Error();
     const text = await res.text();
     const rows = parseCSV(text);
-
-    // skip header row if first cell looks like a label
-    const start = (rows[0] && isNaN(rows[0][0]) && !isYouTubeLink(rows[0][1])) ? 1 : 0;
-
-    allSongs = rows.slice(start)
-      .map(r => ({
-        name    : (r[0]||"").trim(),
-        link    : (r[1]||"").trim(),
-        lang    : norm(r[2]),
-        category: norm(r[3]),
-        singer  : (r[4]||"").trim()
-      }))
-      .filter(s => s.name && s.link);
-
+    const start = (rows[0] && isNaN(rows[0][0]) && !(rows[0][1]||"").includes("youtu")) ? 1 : 0;
+    allSongs = rows.slice(start).map(r=>({
+      name:(r[0]||"").trim(), link:(r[1]||"").trim(),
+      lang:norm(r[2]), category:norm(r[3]), singer:(r[4]||"").trim()
+    })).filter(s=>s.name&&s.link);
     renderSongs();
-
   }catch(e){
-    grid.innerHTML = `<div class="songs-empty" style="grid-column:1/-1"><p>Could not load songs. Make sure the sheet is shared as "Anyone with link can view" and the Sheet ID is correct.</p></div>`;
+    grid.innerHTML = `<div class="songs-empty"><p>Could not load songs. Check Sheet ID and sharing settings.</p></div>`;
     count.textContent = "";
   }
 }
 
-function norm(v){ return (v||"").trim().toLowerCase() }
-function isYouTubeLink(v){ return (v||"").includes("youtu") }
-
-// ─── render with active filters ─────────────────────
 function renderSongs(){
-  const grid  = document.getElementById("songs-grid");
+  const grid = document.getElementById("songs-grid");
   const count = document.getElementById("songs-count");
-
-  const filtered = allSongs.filter(s => {
-    const langOk = activeLang === "all" || s.lang === activeLang;
-    const moodOk = activeMood === "all" || s.category === activeMood;
-    return langOk && moodOk;
+  const filtered = allSongs.filter(s=>{
+    return (activeLang==="all"||s.lang===activeLang) && (activeMood==="all"||s.category===activeMood);
   });
+  count.textContent = filtered.length ? `${filtered.length} song${filtered.length>1?"s":""} found` : "";
+  if(!filtered.length){ grid.innerHTML=`<div class="songs-empty"><p>No songs match this filter yet. More coming soon!</p></div>`; return; }
 
-  count.textContent = filtered.length
-    ? `${filtered.length} song${filtered.length>1?"s":""} found`
-    : "";
+  grid.innerHTML = filtered.map(s=>{
+    const vid = ytId(s.link);
+    // YouTube thumbnail — maxresdefault first, falls back to hqdefault
+    const thumb = vid
+      ? `https://img.youtube.com/vi/${vid}/maxresdefault.jpg`
+      : "";
+    const fallback = vid ? `https://img.youtube.com/vi/${vid}/hqdefault.jpg` : "";
 
-  if(!filtered.length){
-    grid.innerHTML = `<div class="songs-empty" style="grid-column:1/-1"><p>No songs match this filter yet. More coming soon!</p></div>`;
-    return;
-  }
+    const langCls = s.lang==="punjabi"?"badge-punjabi":s.lang==="hindi"?"badge-hindi":"";
+    const moodCls = s.category==="sad"?"badge-sad":s.category==="romantic"?"badge-romantic":s.category==="beats"?"badge-beats":"";
+    const cardCls = s.category==="sad"?"sad-card":s.category==="romantic"?"romantic-card":s.category==="beats"?"beats-card":"";
+    const langLbl = s.lang==="punjabi"?"Punjabi":s.lang==="hindi"?"Hindi":s.lang;
+    const moodLbl = s.category==="sad"?"Sad":s.category==="romantic"?"Romantic":s.category==="beats"?"Beats":s.category;
+    const moodEmoji = s.category==="sad"?"💙":s.category==="romantic"?"💗":s.category==="beats"?"🎵":"";
 
-grid.innerHTML = filtered.map((s, i) => {
-  const langCls  = s.lang === "punjabi" ? "badge-punjabi" : s.lang === "hindi" ? "badge-hindi" : "";
-  const moodCls  = s.category === "sad" ? "badge-sad" : s.category === "romantic" ? "badge-romantic" : s.category === "beats" ? "badge-beats" : "";
-  const cardCls  = s.category === "sad" ? "sad-card" : s.category === "romantic" ? "romantic-card" : s.category === "beats" ? "beats-card" : "";
-  const langLbl  = s.lang === "punjabi" ? "Punjabi" : s.lang === "hindi" ? "Hindi" : s.lang;
-  const moodLbl  = s.category === "sad" ? "Sad" : s.category === "romantic" ? "Romantic" : s.category === "beats" ? "Beats" : s.category;
-  const moodEmoji= s.category === "sad" ? "💙" : s.category === "romantic" ? "💗" : s.category === "beats" ? "🎵" : "";
-  const vid = extractYouTubeId(s.link) || "";
-
-  return `
-<div class="song-card ${cardCls}" data-video-id="${vid}" data-title="${esc(s.name)}">
-<div class="card-preview"></div>
-      <div class="card-badges">
-        ${langCls ? `<span class="badge ${langCls}">${langLbl}</span>` : ""}
-        ${moodCls ? `<span class="badge ${moodCls}">${moodEmoji} ${moodLbl}</span>` : ""}
-      </div>
-      <div class="card-title">${esc(s.name)}</div>
-      ${s.singer ? `<div class="card-singer">ft. ${esc(s.singer)}</div>` : ""}
-      <div class="card-foot">
-        <a href="${esc(s.link)}" target="_blank" rel="noopener" class="card-yt">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="#FF8C00">
-            <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2-.9C16.8 5 12 5 12 5s-4.8 0-7 .1c-.4 0-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.8C6.8 19 12 19 12 19s4.8 0 7-.2c.4 0 1.2-.1 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.7V9.3l5.5 2.7-5.5 2.7z"/>
-          </svg>
+    return `
+    <a href="${esc(s.link)}" target="_blank" rel="noopener" class="song-card ${cardCls}">
+      <div class="card-thumb">
+        ${thumb ? `<img src="${thumb}" alt="${esc(s.name)}" loading="lazy" onerror="this.src='${fallback}'" />` : `<div style="position:absolute;inset:0;background:var(--s2);display:flex;align-items:center;justify-content:center;color:var(--ink3);font-size:.8rem">No thumbnail</div>`}
+        <div class="card-play">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="card-yt-badge">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="red"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2-.9C16.8 5 12 5 12 5s-4.8 0-7 .1c-.4 0-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.8C6.8 19 12 19 12 19s4.8 0 7-.2c.4 0 1.2-.1 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.7V9.3l5.5 2.7-5.5 2.7z"/></svg>
           YouTube
-        </a>
-        <span class="listen-btn">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-          Hover to preview
-        </span>
+        </div>
       </div>
-    </div>`;
-}).join("");
-
-  attachHoverPreview();
-attachCardClick();
+      <div class="card-body">
+        <div class="card-badges">
+          ${langCls?`<span class="badge ${langCls}">${langLbl}</span>`:""}
+          ${moodCls?`<span class="badge ${moodCls}">${moodEmoji} ${moodLbl}</span>`:""}
+        </div>
+        <div class="card-title">${esc(s.name)}</div>
+        ${s.singer?`<div class="card-singer">ft. ${esc(s.singer)}</div>`:""}
+        <div class="card-watch">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2-.9C16.8 5 12 5 12 5s-4.8 0-7 .1c-.4 0-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.8C6.8 19 12 19 12 19s4.8 0 7-.2c.4 0 1.2-.1 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.7V9.3l5.5 2.7-5.5 2.7z"/></svg>
+          Watch on YouTube
+        </div>
+      </div>
+    </a>`;
+  }).join("");
 }
 
-// ─── CSV parser ──────────────────────────────────────
 function parseCSV(text){
-  const rows = [];
+  const rows=[];
   for(const line of text.trim().split("\n")){
-    const cells = []; let cur = "", inQ = false;
-    for(let i=0;i<line.length;i++){
-      const c=line[i];
-      if(c==='"'){inQ=!inQ}
-      else if(c===','&&!inQ){cells.push(cur.trim());cur=""}
-      else{cur+=c}
-    }
-    cells.push(cur.trim());
-    rows.push(cells);
+    const cells=[];let cur="",inQ=false;
+    for(let i=0;i<line.length;i++){const c=line[i];if(c==='"'){inQ=!inQ}else if(c===','&&!inQ){cells.push(cur.trim());cur=""}else{cur+=c}}
+    cells.push(cur.trim());rows.push(cells);
   }
   return rows;
 }
 
-function esc(s){
-  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
-}
-
-  function extractYouTubeId(url){
-  const m = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/);
-  return m ? m[1] : null;
-}
-
-
-function attachHoverPreview(){
-  document.querySelectorAll(".song-card").forEach(card => {
-    const vid = card.dataset.videoId;
-    if(!vid) return;
-    const preview = card.querySelector(".card-preview");
-
-    card.addEventListener("mouseenter", () => {
-      card.classList.add("hover-active");
-      preview.innerHTML = `<iframe src="https://www.youtube.com/embed/${vid}?autoplay=1&mute=1&controls=0&modestbranding=1&playsinline=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
-    });
-
-    card.addEventListener("mouseleave", () => {
-      card.classList.remove("hover-active");
-      preview.innerHTML = ""; // stops playback
-    });
+document.querySelectorAll("[data-lang]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll("[data-lang]").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active"); activeLang=btn.dataset.lang; renderSongs();
   });
-}
-
-
-
-// ─── Filter pill logic ───────────────────────────────
-document.querySelectorAll("[data-lang]").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll("[data-lang]").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    activeLang = btn.dataset.lang;
-    renderSongs();
+});
+document.querySelectorAll("[data-mood]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll("[data-mood]").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active"); activeMood=btn.dataset.mood; renderSongs();
   });
 });
 
-document.querySelectorAll("[data-mood]").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll("[data-mood]").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    activeMood = btn.dataset.mood;
-    renderSongs();
-  });
-});
-
-// ─── Hero mood word rotation ─────────────────────────
-const moods = [
-  {word:"feel real.",  color:"#FF8C00"},
-  {word:"make cry.",   color:"#4A90D9"},
-  {word:"fall in love.",color:"#F0548C"},
-  {word:"hit hard.",   color:"#8B5CF6"},
-];
-let mi = 0;
-const mw = document.getElementById("mood-word");
+// Hero word rotation
+const moods=[{word:"feel real.",color:"#FF8C00"},{word:"make cry.",color:"#4A90D9"},{word:"fall in love.",color:"#F0548C"},{word:"hit hard.",color:"#8B5CF6"}];
+let mi=0; const mw=document.getElementById("mood-word");
 setInterval(()=>{
-  mi=(mi+1)%moods.length;
-  mw.style.opacity="0";
-  mw.style.transform="translateY(8px)";
-  mw.style.transition="opacity .25s,transform .25s";
-  setTimeout(()=>{
-    mw.textContent=moods[mi].word;
-    mw.style.color=moods[mi].color;
-    mw.style.opacity="1";
-    mw.style.transform="translateY(0)";
-  },260);
+  mi=(mi+1)%moods.length; mw.style.opacity="0"; mw.style.transform="translateY(8px)"; mw.style.transition="opacity .25s,transform .25s";
+  setTimeout(()=>{mw.textContent=moods[mi].word;mw.style.color=moods[mi].color;mw.style.opacity="1";mw.style.transform="translateY(0)"},260);
 },2600);
 
-// ─── boot ────────────────────────────────────────────
 initSongs();
 </script>
 </body>
